@@ -6,14 +6,25 @@
 }
 
 body{
+    /* background-image: url(../images/wepik-photo-mode-2022626-0319.png);
+    max-height: 900px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center; */
+    color: #fff;
+    font-family: "Roboto";
+}
+
+.bg-img{
     background-image: url(../images/wepik-photo-mode-2022626-0319.png);
+    position: absolute;
     height: 100vh;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
-    color: #fff;
-    font-family: "Roboto";
+    z-index: -100;
 }
 
 nav{
@@ -33,6 +44,7 @@ nav{
 .right-nav{
     /* margin-left: 300px; */
     display: flex;
+    /* flex-wrap: wrap; */
     column-gap: 150px;
     height: 70px;
     padding-top: 40px;
@@ -41,6 +53,7 @@ nav{
 }
 .list{
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     column-gap: 80px;
 }
@@ -152,4 +165,65 @@ nav{
     background-color: #fff;
     left: 70px;
     top: -7px;
+}
+
+@media screen and (max-width: 1200px){
+    .main-content{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 922px) {
+    nav{
+        flex-direction: column;
+    }
+    .right-nav{
+        flex-direction: column;
+        row-gap: 30px;
+        border: none;
+    }
+    .list{
+        row-gap: 30px;
+    }
+    .main-content{
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    .main-text{
+        width: 100%;
+        inline-size: auto;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        row-gap: 120px;
+    }
+    .box-1{
+        position: static;
+    }
+    .box-2{
+        position: static;
+    }
+}
+
+@media screen and (max-width: 466px){
+    .main-text{
+        font-size: 30px;
+        margin-top: 90px;
+        width: 100%;
+        inline-size: auto;
+    }
+    .right{
+        justify-content: center;
+    }
+    .box{
+        width: 290px;
+        box-sizing: border-box;
+    }
+    .line-1{
+        display: none;
+    }
+    .line-2{
+        display: none;
+    }
 }
