@@ -11,4 +11,4 @@
 - CSS Flexbox
 - Media Queries
 
-![demo image](./images/thumbnail.png)
+![demo image](./images/10.png)
